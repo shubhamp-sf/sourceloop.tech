@@ -1,0 +1,16 @@
+{
+  "name": "ARC by SourceFuse",
+  "description": "Rapid Application Development for Digital Enterprises",
+  "short_name": "ARC",
+  "start_url": "/",
+  "lang": "en-IN",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ed1b24",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/favicon.ico", "sizes": "32x32", "type": "image/x-icon" },
+    { "src": "/assets/logo192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/assets/logo512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}
