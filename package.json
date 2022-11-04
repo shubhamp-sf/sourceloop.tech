@@ -4,12 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build-dev": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run arcbysf:serve-ssr",
     "serve:ssr": "node dist/arcbysf/server/main.js",
     "build:ssr": "ng build --configuration production && ng run arcbysf:server",
+    "vercel-build": "npm run build:ssr",
     "prerender": "ng run arcbysf:prerender"
   },
   "private": true,
