@@ -9,7 +9,7 @@
     "test": "ng test",
     "dev:ssr": "ng run arcbysf:serve-ssr",
     "serve:ssr": "node dist/arcbysf/server/main.js",
-    "build:ssr": "ng build && ng run arcbysf:server",
+    "build:ssr": "ng build --configuration production && ng run arcbysf:server",
     "prerender": "ng run arcbysf:prerender"
   },
   "private": true,
