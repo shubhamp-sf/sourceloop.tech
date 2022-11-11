@@ -1,0 +1,10 @@
+:host {
+  background: rgb(2, 8, 33, 0.5);
+}
+
+div.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
