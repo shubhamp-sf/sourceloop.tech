@@ -1,10 +1,61 @@
 :host {
-  background: rgb(2, 8, 33, 0.5);
+  /* background: rgb(2, 8, 33, 0.5); */
+  padding: 1rem 0;
+  backdrop-filter: blur(15px) brightness(0.6);
+}
+
+@media screen and (max-width: 1320px) {
+  :host {
+    padding: 0.5rem 1rem;
+  }
 }
 
 div.header-content {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  grid-template-columns: 2fr 1fr 2fr;
+}
+.right-buttons {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-self: end;
+}
+
+.left-links {
+  /* border: 1px solid white; */
+}
+
+.left-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+.left-links a {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+.left-links a:hover {
+  color: white;
+}
+.logo {
+  display: grid;
+  justify-content: center;
+  color: white;
+}
+.logo img {
+  pointer-events: none;
+  justify-self: center;
+}
+.owner-tag {
+  font-size: 0.8rem;
+}
+.company-name {
+  font-weight: 600;
+  font-size: 1rem;
 }

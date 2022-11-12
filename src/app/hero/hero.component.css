@@ -2,3 +2,42 @@
   background-image: url("/assets/images/bg img.png");
   background-size: cover;
 }
+.left {
+  color: white;
+}
+.hero-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.hero-wrapper .right video {
+  display: block;
+  width: auto;
+}
+.left h1 {
+  font-size: 2.85rem;
+  margin: 0;
+}
+.left p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.yellow {
+  color: #e7ee23;
+}
+.download-badge {
+  user-select: none;
+}
+.download-badge img {
+  pointer-events: none;
+}
+.cta {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.25rem;
+}

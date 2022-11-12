@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'button[header-button]',
+  selector: 'button[header-button], a[header-button]',
   templateUrl: './header-button.component.html',
   styleUrls: ['./header-button.component.css'],
 })

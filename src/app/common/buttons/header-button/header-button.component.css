@@ -5,18 +5,50 @@
   display: grid;
   align-items: center;
   font-size: 1.15rem;
-  padding: 0.5rem;
-  border-radius: 0.25rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 0.5rem;
   grid-template-columns: auto auto auto;
   gap: 0.35rem;
+  transition: 0.1s;
+  outline: none;
+  width: max-content;
+}
+:host:hover,
+:host:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0px 4px rgba(255, 255, 255, 0.1);
+}
+
+:host.hero-cta {
+  border-radius: 0.7rem;
+  gap: 0.5rem;
+}
+:host.hero-cta.secondary {
+  padding: 0.9rem 1.25rem;
+}
+:host.hero-cta.primary {
+  display: flex;
+  flex-direction: row-reverse;
+  background: #fe483e;
+  gap: 1rem;
+  padding: 0 1.5rem;
+}
+:host.hero-cta.primary:hover,
+:host.hero-cta.primary:focus {
+  box-shadow: 0 0 0px 4px rgba(254, 72, 62, 0.3);
+}
+
+:host.hero-cta.primary .divider {
+  display: none;
 }
 
 .divider {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   height: 85%;
   padding: 0.5px;
   margin-right: 0.15rem;
 }
 .text {
   opacity: 0.9;
+  margin-right: 0.15rem;
 }

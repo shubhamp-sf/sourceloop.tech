@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { ContainerComponent } from './common/container/container.component';
 import { HeaderButtonComponent } from './common/buttons/header-button/header-button.component';
+import { FlexComponent } from './common/flex/flex.component';
+import { NoLineHeightComponent } from './common/no-line-height/no-line-height.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { HeaderButtonComponent } from './common/buttons/header-button/header-but
     HeroComponent,
     ContainerComponent,
     HeaderButtonComponent,
+    FlexComponent,
+    NoLineHeightComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

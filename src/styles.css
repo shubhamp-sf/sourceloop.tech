@@ -1,5 +1,9 @@
+:root {
+  --font: "Poppins", Roboto, "Helvetica Neue", sans-serif;
+}
 * {
   box-sizing: border-box;
+  font-family: var(--font);
 }
 html,
 body {
@@ -7,7 +11,7 @@ body {
 }
 body {
   margin: 0;
-  font-family: "Poppins", Roboto, "Helvetica Neue", sans-serif;
+  font-family: var(--font);
 }
 /* utility */
 .ta-c {
@@ -37,4 +41,8 @@ body {
 
 button {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
